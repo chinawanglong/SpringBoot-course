@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: elliot@mysql
+mybatis:
+  type-aliases-package: com.example.demo.entity # 指定别名设置的包为所有entity
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰命名规范
+  mapper-locations: # mapper映射文件位置
+    - classpath: mapper/*.xml
+
+
+server:
+  port: 8082
+
+
+# mybatis的相关配置
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+
