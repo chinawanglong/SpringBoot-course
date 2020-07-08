@@ -9,7 +9,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true # 驼峰命名规范
   mapper-locations: # mapper映射文件位置
-    - classpath: mapper/*.xml
+    - classpath:mapper/*.xml
 
 
 server:
