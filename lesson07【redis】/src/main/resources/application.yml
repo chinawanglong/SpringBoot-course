@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    database: 1
+    # 配置redis的主机地址
+    host: localhost
+    port: 6379
+    password:
+    timeout: 5000
+    jedis:
+      pool:
+        # 连接池的最大空闲连接，默认值是8
+        max-idle: 500
+        # 连接池最小空闲连接，默认值是0
+        min-idle: 50
+        # 如果赋值-1，则表示不限制
+        max-active: 1000
+        # 等待可用连接的最大时间，单位毫秒。如果超过等待时间，则直接抛出JedisConnectionException
+        max-wait: 2000
