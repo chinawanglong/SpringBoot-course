@@ -46,7 +46,7 @@ public class MenuUtil {
             }
         }
         for (Menu menu:menusChild){
-            if (menu.getId() != 0){
+            if (menu.getPid() != 0){
                 menu.setChildMenus(getChildTree(menu.getId(), menusRoot));
             }
         }
